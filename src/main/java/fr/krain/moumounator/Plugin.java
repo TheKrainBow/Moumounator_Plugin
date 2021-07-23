@@ -2,7 +2,7 @@ package fr.krain.moumounator;
 
 import fr.krain.moumounator.commands.CommandClass;
 import fr.krain.moumounator.commands.CommandWarp;
-import fr.krain.moumounator.commands.CommandSpell;
+import fr.krain.moumounator.mmo.spells.SpellMage;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Plugin extends JavaPlugin {
@@ -15,7 +15,7 @@ public class Plugin extends JavaPlugin {
         getCommand("warp").setExecutor(new CommandWarp(this));
         getCommand("warps").setExecutor(new CommandWarp(this));
         getCommand("class").setExecutor(new CommandClass(this));
-        getCommand("spell").setExecutor(new CommandSpell(this));
+        getCommand("spell").setExecutor(new SpellMage(this));
         getServer().getPluginManager().registerEvents(new PluginListener(this), this);
     }
 

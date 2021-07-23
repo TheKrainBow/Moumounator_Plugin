@@ -2,29 +2,6 @@ import org.apache.tools.ant.filters.ReplaceTokens
 
 plugins {
     id 'java'
-    id 'org.hidetake.ssh' version '2.10.1'
-}
-
-ssh.settings {
-    dryRun = project.hasProperty('dryRun')
-}
-
-remotes {
-    web01 {
-        role 'webServers'
-        host = '52.37.152.220'
-        user = 'krain'
-    }
-}
-
-task reload {
-    doLast {
-        ssh.run {
-            session(remotes.role('webServers')) {
-                execute 'sudo service tomcat restart'
-            }
-        }
-    }
 }
 
 processResources {
@@ -35,6 +12,7 @@ jar {
     setDuplicatesStrategy(DuplicatesStrategy.INCLUDE)
     destinationDirectory.set(file("C:\\Users\\matag\\Documents\\Serveur minecraft\\plugins"))
 }
+
 group = 'fr.krain'
 version = '1.0-SNAPSHOT'
 
