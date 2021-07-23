@@ -1,0 +1,15 @@
+name: Moumounator
+version: @version@
+main: fr.krain.moumounator.Plugin
+api-version: 1.17
+commands:
+  warp:
+    description: Used to teleport to specific warp points
+  warps:
+    description: Give warps available for the player
+  spawn:
+    description: Shortcut for warp spawn
+  class:
+    description: Command that handle all epic MMO classes
+  spell:
+    description: Command that handle all spells of MMO

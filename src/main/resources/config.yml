@@ -1,0 +1,15 @@
+warp:
+  spawn:
+    world: world
+    x: 17.5
+    y: 77.0
+    z: 202.5
+    yawn: 90
+    pitch: 0
+  town:
+    world: world
+    x: 17.5
+    y: 77.0
+    z: 195.5
+    yawn: 180
+    pitch: 21.2

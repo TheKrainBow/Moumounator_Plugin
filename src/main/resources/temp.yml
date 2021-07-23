@@ -1,0 +1,100 @@
+Voleur:
+  Sort: Dague Empoisonné
+    Type: Pas de cible
+    Description: La prochaine attaque au CaC inflige un poison de force X pendant X secondes.
+  Sort: Invisibilité
+    Type: Pas de cible
+    Description: Rends le lanceur invisible pendant X secondes.
+  Sort: Coup sournois
+    Type: Cible nécessaire.
+    Description: Téléporte le lanceur dans le dos de la cible, si elle se trouve à moins de X blocs.
+  Sort: Lancer de couteau
+    Type: Skillshot (Part tout droit)
+    Description: Lance un couteau qui inflige X dégats si une entité est touché.
+
+Guerrier:
+  Sort: Ruée offensive
+    Type: Pas de cible
+    Description:  Le lanceur se rue dans une direction, et deviens invincible le temps de sa durée. Il s'arrete sur la
+      première entité touché pour lui infliger des dégats, ou après X blocks.
+  Sort: Coup assomant
+    Type: Pas de cible.
+    Description: Le prochain coup au CaC root la cible pendant X secondes.
+  Passif: Maitrise du Bouclier
+    Description:  Utilise son bouclier pour parer LA prochaine attaque. Désactive ensuite l'utilisation du bouclier pendant X
+      seconds
+  Sort: Chaînes du Guerrier
+    Type: Cible nécessaire.
+    Description: Rapproche l'entité ciblé au CaC du lanceur (X blocs max)
+
+Chasseur:
+  Sort: Capture
+    Type: Cible sur un Loup, ou Pas de Cible
+    Description: Capture un Loup (ou autre, plus tard) pour en faire le familier du lanceur. Si celui-ci meurs, relancer le
+      sort permet de réinvoquer le familier. (cd de X secondes)
+  Sort: Attaque!
+    Type: Cible nécessaire.
+    Description: Ordonne au familier du lanceur d'attaquer la cible.
+  Sort: Piège du Chasseur
+    Type: Pas de cible.
+    Description: Pose un piège au pieds du lanceur, qui root de X secondes et fais X dégats.
+  Sort: Traque
+    Type: Commande
+    Description: Permet au lanceur de traquer un autre joueur, pour lui infliger X% de dégats suplémentaire, et obtenir une
+      vision pur (glowing?)
+
+Chaman:
+  Sort: Totem de Soin
+    Type: Pas de cible
+    Description: Invoque un Totem qui soigne les alliées à X blocs ou moins, de X coeurs par secondes.
+  Sort: Totem électrique
+    Type: Pas de cible
+    Description: Invoque un Totem qui attaque les ennemies à X blocs ou moins, de X coeurs par secondes.
+  Sort: Portail de L'Outre-Monde
+    Type: Cible nécessaire.
+    Description: Projete la cible dans l'Outre-Monde pendant X seconde. (Zhonia monocible sur allié ou ennemie)
+  Sort: Impulsion électrique
+    Type: Cible nécessaire ?
+    Description: Envoies une boule d'énergie sur un ennemie infligeant X coeurs de dégats. Elle rebondit ensuite sur X
+      enemies
+
+Druide:
+  Sort: Soin Sylvestre
+    Type: Cible nécessaire.
+    Description: Soigne l'allié ciblé de X coeurs.
+  Passif: Don de la Nature.
+    Description: Soigne les alliés à X blocs de X coeurs par secondes
+  Sort: Potion de l'Herboriste
+    Type: Pas de Cible.
+    Description: Bois une potion qui donne Force X pendant X secondes.
+  Sort: Ronces Agressives
+    Type: AoE
+    Description: Attaque tout les ennemies dans la zone ciblé, de X coeurs.
+
+Paladin:
+  Sort: Bouclier Lumineux
+    Type: Cible nécessaire.
+    Description: Donne X coeur de bouclier (absorption) à un allié.
+  Sort: Cri de Guerre
+    Type: Pas de cible.
+    Description: Boost les allié à X blocs ou moins, de Speed X pendant X secondes.
+  Sort: Eclaire Divin
+    Type: Cible nécessaire.
+    Description: Atteint la cible d'un éclaire de lumière, infligeant X coeurs de dégats.
+  Sort: Plastron du Bouc Emissaire
+    Type: Pas de cible.
+    Description: Accorde un bouclier au lanceur de X% de dégats subis les X dernières secondes.
+
+Mage:
+  Sort: Boule de feu
+    Type: Skillshot
+    Description: Envoies une boule de feu a X blocs, infligeant X coeurs à la cible.
+  Sort: Mur de Glace
+    Type: Skillshot
+    Description: Invoque une mur de glace de X blocs de haut, de X blocs de large pendant X secondes.
+  Sort: Blink
+    Type: Skillshot
+    Description: Téléporte le lanceur X blocs en avant
+  Sort: Lancer de rocher
+    Type: Cible nécessaire
+    Description: Lance un rocher sur la cible, infligeant X coeurs et appliquand Slowness X pendant X secondes
